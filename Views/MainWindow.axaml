@@ -1,0 +1,10 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="clr-namespace:OilExtractionApp.ViewModels" 
+        x:Class="OilExtractionApp.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Title="Добыча нефти" Width="800" Height="600">
+    <StackPanel>
+        <Button Content="Запустить добычу нефти" Command="{Binding StartExtractionCommand}" />
+    </StackPanel>
+</Window>
