@@ -1,28 +1,37 @@
 using System;
-namespace OilExtractionApp.Models;
-public class OilPlatform
+
+namespace OilExtractionApp.Models
 {
-    public string Name { get; set; }
-    public event EventHandler<FireEventArgs> FireEvent;
-
-    private static Random _random = new Random();
-
-    public void CheckForFire()
+    public class OilPlatform
     {
-        // С вероятностью 10% может произойти возгорание
-        if (_random.Next(0, 100) < 10)
+        public string Name { get; set; }
+        public bool HasFire { get; private set; }
+        public event EventHandler<FireEventArgs> FireEvent;
+
+        private static readonly Random _random = new Random();
+
+        public void CheckForFire()
         {
-            OnFire(new FireEventArgs { Message = $"{Name} возгорелась!" });
+            // С вероятностью 10% может произойти возгорание
+            if (_random.Next(0, 100) < 10)
+            {
+                HasFire = true;
+                OnFire(new FireEventArgs { Message = $"{Name} возгорелась!" });
+            }
+            else
+            {
+                HasFire = false;
+            }
+        }
+
+        protected virtual void OnFire(FireEventArgs e)
+        {
+            FireEvent?.Invoke(this, e);
         }
     }
 
-    protected virtual void OnFire(FireEventArgs e)
+    public class FireEventArgs : EventArgs
     {
-        FireEvent?.Invoke(this, e);
+        public string Message { get; set; }
     }
-}
-
-public class FireEventArgs : EventArgs
-{
-    public string Message { get; set; }
 }
