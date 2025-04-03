@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\uliana_dev\\OilExtractionApp\\OilExtractionApp.csproj": {}
+    "C:\\Users\\uliana_dev\\3lab_IT\\OilExtractionApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\uliana_dev\\OilExtractionApp\\OilExtractionApp.csproj": {
+    "C:\\Users\\uliana_dev\\3lab_IT\\OilExtractionApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\uliana_dev\\OilExtractionApp\\OilExtractionApp.csproj",
+        "projectUniqueName": "C:\\Users\\uliana_dev\\3lab_IT\\OilExtractionApp.csproj",
         "projectName": "OilExtractionApp",
-        "projectPath": "C:\\Users\\uliana_dev\\OilExtractionApp\\OilExtractionApp.csproj",
+        "projectPath": "C:\\Users\\uliana_dev\\3lab_IT\\OilExtractionApp.csproj",
         "packagesPath": "C:\\Users\\uliana_dev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\uliana_dev\\OilExtractionApp\\obj\\",
+        "outputPath": "C:\\Users\\uliana_dev\\3lab_IT\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\uliana_dev\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -4,7 +4,24 @@
         x:Class="OilExtractionApp.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
         Title="Добыча нефти" Width="800" Height="600">
-    <StackPanel>
-        <Button Content="Запустить добычу нефти" Command="{Binding StartExtractionCommand}" />
+    <StackPanel Margin="20" Spacing="10">
+        <TextBlock Text="Управление нефтяной платформой" FontSize="18" FontWeight="Bold"/>
+        
+        <Button Content="Запустить добычу нефти" 
+                Command="{Binding StartExtractionCommand}"
+                Margin="0,10"/>
+                
+        <Button Content="Начать мониторинг" 
+                Command="{Binding StartMonitoringCommand}"
+                Margin="0,5"/>
+                
+        <Button Content="Остановить мониторинг" 
+                Command="{Binding StopMonitoringCommand}"
+                Margin="0,5"/>
+                
+        <Border Background="#3E3C80" Padding="10" Margin="0,20">
+            <TextBlock Text="{Binding StatusMessage}" 
+                       FontSize="14" TextWrapping="Wrap"/>
+        </Border>
     </StackPanel>
 </Window>

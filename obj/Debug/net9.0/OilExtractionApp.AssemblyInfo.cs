@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("OilExtractionApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f3f075b455be26e233145da904811ec6e61e0bc1")]
 [assembly: System.Reflection.AssemblyProductAttribute("OilExtractionApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("OilExtractionApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

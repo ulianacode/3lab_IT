@@ -3,7 +3,7 @@ namespace OilExtractionApp.Models;
 public class OilPlatform
 {
     public string Name { get; set; }
-    public event EventHandler<FireEventArgs> FireEvent; // Событие возгорания платформы
+    public event EventHandler<FireEventArgs> FireEvent;
 
     private static Random _random = new Random();
 

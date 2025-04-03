@@ -7,7 +7,7 @@ namespace OilExtractionApp.Views
         public MainWindow()
         {
             InitializeComponent();
-            DataContext = new ViewModels.MainWindowViewModel();  // Убедитесь, что ViewModel существует и правильно используется
+            DataContext = new ViewModels.MainWindowViewModel();
         }
     }
 }
